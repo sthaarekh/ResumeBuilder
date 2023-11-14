@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@800&family=Prata&family=Cormorant+Garamond:wght@700&family=Noto+Serif+Ottoman+Siyaq&family=Roboto+Serif:wght@500&display=swap');
+.restemp {
+    max-width: 595px;
+    margin: 0 auto;       
+    /* border-width: 10px;
+    border-style: ridge; */
+}
+.name{
+    height: 110px;
+    background-color: rgba(187, 133, 133, 0.836);
+    margin-bottom: -13%;
+}
+.contents{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.restemp span, .restemp label{
+    font-style: italic;
+}
+
+.additionalc{
+    width: 40%;
+    margin-left: 20px;
+    padding: 0 20px;
+    background-color: rgb(130, 197, 130);
+}
+.additionalc p{
+    letter-spacing: 1.5px;
+    border-bottom: 2px inset rgb(133, 121, 121);
+    font: italic bold .9em 'Roboto Serif', serif;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.img{
+    height: 80px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+.img img{
+    margin-top: 40px;
+    height: 145px;
+    width: 145px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.pdetails{
+    padding-top: 130px;
+    font: italic 13.5px 'Times New Roman', Times, serif;
+}
+.pskills span,.pinterests span{
+    display: grid;
+    font: italic 13.5px 'Times New Roman', Times, serif;
+    letter-spacing: .3px;
+    margin-left: 7px;
+    margin-bottom: 2.5px;
+}
+
+
+.infoc{
+    display: grid;
+    width: 65%;
+    margin-right: 20px;
+}
+.infoc p{
+    color: black;
+    background-color: rgba(187, 133, 133, 0.267);
+    text-align: center;
+    letter-spacing: 1.5px;
+    font: italic bold 1em 'Roboto Serif', serif;
+}
+.profname{
+    height: 60px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font: italic 35px 'Cairo', serif;
+    letter-spacing: 1px;
+}
+.profile i{
+    margin-left: 7px;    
+    color: rgba(0, 0, 0, 0.781);
+}
+.profile span{
+    font: italic 15px 'Times New Roman', Times, serif;
+}
+
+.clg-eduf{
+    margin-bottom: 5px;
+}
+.clg-eduf, .scl-eduf,.dexp,.projectd{
+    margin-left: 7px;
+}
+.eduname{
+    font: italic bold 16px 'Noto Serif Ottoman Siyaq', serif;
+    margin-bottom: -10px;
+}
+.eduqua,.edudesc{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.restemp label, .linkpro{
+    color: rgba(0, 0, 0, 0.356);
+    font: italic bold 10px 'Noto Serif Ottoman Siyaq', serif;
+}   
+.ogname{
+    font: italic bold 16px 'Noto Serif Ottoman Siyaq', serif;
+    margin-bottom: -5px;
+}
+
+.exppd{
+    color: rgba(0, 0, 0, 0.356);
+    font: italic bold 12px 'Noto Serif Ottoman Siyaq', serif;
+}
+
+.descexp, .descpro{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.titlepro{
+    font: italic bold 16px 'Noto Serif Ottoman Siyaq', serif;
+    margin-bottom: -10px;
+}
+
+footer{
+    display: block;
+    color: rgba(0, 0, 0, 0.356);
+    margin-top: 10px;
+    text-align: center;
+    font-family: samarkan;
+    font-size: small;
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+@font-face {
+    font-family: 'samarkan';
+    src: url('samarkan.TTF') format('truetype'); 
+}
+
+body { 
+    font-family: Arial, sans-serif; 
+}
+.container {
+    max-width: 900px;
+    line-height: 1.6; 
+    margin: 0 auto;
+}
+.container h2{
+    font-family: 'Nunito Sans', sans-serif;
+    border-bottom: 2px solid;
+    border-color: rgb(160, 132, 132);
+}
+.container p{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+.container label{
+    display: block;
+    margin-bottom: 0.5rem;
+    position: absolute;
+    top: 15%;
+    left: 9px;
+    font-size: 14px;
+    pointer-events: none;
+    transition: .5s;
+    color: rgb(128, 128, 128);
+    font-family: 'Poppins', sans-serif;
+}
+
+.restxt{
+    text-align: center;
+    background-color: #966a6a;
+    margin: -10px;
+    color: white;
+    font-size: 70px;
+    font-family: 'Rowdies', sans-serif;
+    letter-spacing: 2px;
+}
+.horz{
+    background-color: rgba(160, 132, 132, 0.171);
+    height: 1px;
+    display: flex;
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+#btn, button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: rgb(130, 197, 130);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 16px;
+}
+#btn:hover,#rDownload:hover {
+    background-color: #65aa6e;
+}
+
+form{
+    row-gap: 3.5rem;
+    column-gap: 3rem;
+    display: flex;
+}
+.form-groups{
+    display: grid;
+    width: 46%;
+}
+.form-group{
+    margin-bottom: 1.3rem;
+    position: relative;
+}
+
+
+
+input:focus~label,
+input:valid~label
+{
+    top: -26%;
+    font-size: 12px;
+    background: white;
+    padding: 0 3px 0;
+}
+input, button
+{
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input:focus { 
+    outline: none;
+    border-color: #966a6a;
+ }
+ 
+
+.eduf,.exp,.skill,.interest{
+    width: 100%;
+    display: grid;
+}
+.eduf-clg,.eduf-scl,.expd,.skills,.interests{
+    display: flex;
+    column-gap: 3rem;
+}
+.eduf-clg .form-group,
+.eduf-scl .form-group,
+.expd .form-group,
+.skills .form-group,
+.interests .form-group
+{
+    width: 29%;
+}
+.eduf .form-group input{
+    display: flex;
+}
+
+.project{
+    display: flex;
+    column-gap: 3rem;
+    width: 100%;
+}
+.projects{
+    width: 28.9%;
+    margin-top: -20px;
+}
+
+@media screen and (max-width:576px) {
+    .project,.eduf-clg,.eduf-scl,.expd,.skills,.interests,form{
+        column-gap: 2rem;
+    }
+}
+
+@media print{
+    .container, .restxt{
+        display: none;
+    }
+    .restemp{
+        border-style: none;
+    }
+}

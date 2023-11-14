@@ -1,0 +1,480 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Resume Builder</title> 
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/resume.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="assets/js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="assets/img/lg.png" rel="icon">
+        <meta property="og:title" content="Resume Builder">
+        <meta property="og:description" content="By Arekh Shrestha">
+        <meta property="og:image" content="assets/img/cover.jpg">
+        <meta property="og:url" content="https://sthaarekh.github.io/ResumeBuilder">
+        <meta property="twitter:card" content="summary_large_image">
+    </head> 
+            <body>  
+                <h1 class="restxt">Resume Builder</h1>
+                <div class="container"> 
+                    <h2>Personal Details</h2>
+                    <form> 
+                        <div class="form-groups">
+                            <div class="form-group"> 
+                                <input type="text" id="dfirstName" required> 
+                                <label>First Name*</label>
+                            </div>
+                            <div class="form-group"> 
+                                <input type="email" id="dEmail" required> 
+                                <label>Email*</label>
+                            </div>
+                            <div class="form-group"> 
+                                <input type="url" id="dWebsite" required> 
+                                <label>Your Website</label>
+                            </div> 
+                            <div class="form-group"> 
+                                <input type="text" id="dLinkedIn" required> 
+                                <label>Linked In</label>
+                            </div>
+                            <div class="form-group"> 
+                                <input type="text" id="dFacebook" required> 
+                                <label>Facebook</label>
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-groups">
+                            <div class="form-group"> 
+                                <input type="text" id="dlastName" required> 
+                                <label>Last Name*</label>
+                            </div> 
+                            <div class="form-group"> 
+                                <input type="number" id="dNumber" required> 
+                                <label>Phone Number</label>
+                            </div> 
+                            <div class="form-group"> 
+                                <input type="text" id="dGithub" required> 
+                                <label>Github</label>
+                            </div> 
+                            <div class="form-group"> 
+                                <input type="text" id="dTwitter" required> 
+                                <label>Twitter</label>
+                            </div>
+                            <div class="form-group"> 
+                                <input type="text" id="dInstagram" required> 
+                                <label>Instagram</label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="form-group">
+                        <button onclick="document.getElementById('dPhoto').click()" style="background-color: rgb(130, 197, 130);">Upload Your Image</button>
+                        <input type="file" accept="image/jpeg, image/png, image/jpg" id="dPhoto" style="display:none;"> 
+                    </div>
+                    <h2>Educational Details</h2> 
+                    <form>
+                        <div class="eduf">
+                            <div class="eduf-clg">
+                                <div class="form-group"> 
+                                    <input type="text" id="dclgname" required> 
+                                    <label>College*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="date" id="dclgfy" required> 
+                                    <label>From Year*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="date" id="dclgty" required> 
+                                    <label>To Year*</label>
+                                </div>
+                            </div>
+                            <div class="eduf-clg">
+                                <div class="form-group"> 
+                                    <input type="text" id="dclgqua" required> 
+                                    <label>Qualification*</label>
+                                </div>
+                                <div class="form-group" style="width: 63.3%;"> 
+                                    <input type="text" id="dclgdesc" required> 
+                                    <label>Description*</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="horz"></div>
+                    <form>
+                        <div class="eduf">
+                            <div class="eduf-scl">
+                                <div class="form-group"> 
+                                    <input type="text" id="dsclname" required> 
+                                    <label>School*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="date" id="dsclfy" required> 
+                                    <label>From Year*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="date" id="dsclty" required> 
+                                    <label>To Year*</label>
+                                </div>
+                            </div>
+                            <div class="eduf-scl">
+                                <div class="form-group"> 
+                                    <input type="text" id="dsclqua" required> 
+                                    <label>Qualification*</label>
+                                </div>
+                                <div class="form-group" style="width: 63.3%;"> 
+                                    <input type="text" id="dscldesc" required> 
+                                    <label>Description*</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <h2>Projects Developed</h2>
+                    <form>
+                        <div class="project">
+                            <div class="projects">
+                                <p><i class="ri-lightbulb-line"></i> Project 1</p>
+                                <div class="form-group"> 
+                                    <input type="text" id="dptitle1" required> 
+                                    <label>Title*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="url" id="dplink1" required> 
+                                    <label>Link*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" id="dpdesc1" required> 
+                                    <label>Description*</label>
+                                </div>
+                            </div>
+                            <div class="projects">
+                                <p><i class="ri-lightbulb-line"></i> Project 2</p>
+                                <div class="form-group"> 
+                                    <input type="text" id="dptitle2" required> 
+                                    <label>Title*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="url" id="dplink2" required> 
+                                    <label>Link*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" id="dpdesc2" required> 
+                                    <label>Description*</label>
+                                </div>
+                            </div>
+                            <div class="projects">
+                                <p> <i class="ri-lightbulb-line"></i> Project 3</p>
+                                <div class="form-group"> 
+                                    <input type="text" id="dptitle3" required> 
+                                    <label>Title</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="url" id="dplink3" required> 
+                                    <label>Link</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" id="dpdesc3" required> 
+                                    <label>Description</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <h2>Experience Details</h2>
+                    <p><i class="ri-user-star-line"></i> Experience 1</p>
+                    <form>
+                        <div class="exp">
+                            <div class="expd">
+                                <div class="form-group"> 
+                                    <input type="text" id="dexpog1" required> 
+                                    <label>Organization*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" id="dexppost1" required> 
+                                    <label>Position*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" id="dexpdue1" required> 
+                                    <label>Duration*</label>
+                                </div>
+                            </div>
+                            <div class="expd">
+                                <div class="form-group" style="width: 97.65%;"> 
+                                    <input type="text" id="dexpdesc1" required> 
+                                    <label>Description*</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <p><i class="ri-user-star-line"></i> Experience 2</p>
+                    <form>
+                        <div class="exp">
+                            <div class="expd">
+                                <div class="form-group"> 
+                                    <input type="text" id="dexpog2" required> 
+                                    <label>Organization*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" id="dexppost2" required> 
+                                    <label>Position*</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" id="dexpdue2" required> 
+                                    <label>Duration*</label>
+                                </div>
+                            </div>
+                            <div class="expd">
+                                <div class="form-group" style="width: 97.65%;"> 
+                                    <input type="text" id="dexpdesc2" required> 
+                                    <label>Description*</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <h2>Extra Details</h2>
+                    <p>
+                        <i class="ri-pencil-ruler-2-line"></i> Skills/Language
+                    </p>
+                    <form>
+                        <div class="skill">
+                            <div class="skills">
+                                <div class="form-group"> 
+                                    <input type="text" classs="liskill" id="dskill1" required> 
+                                    <label>Skill 1</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" classs="liskill" id="dskill2" required> 
+                                    <label>Skill 2</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" classs="liskill" id="dskill3" required> 
+                                    <label>Skill 3</label>
+                                </div>
+                            </div>
+                            <div class="skills">
+                                <div class="form-group"> 
+                                    <input type="text" classs="liskill" id="dskill4" required> 
+                                    <label>Skill 4</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" classs="liskill" id="dskill5" required> 
+                                    <label>Skill 5</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" classs="liskill" id="dskill6" required> 
+                                    <label>Skill 6</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i> Interest
+                    </p>
+                    <form>
+                        <div class="interest">
+                            <div class="interests">
+                                <div class="form-group"> 
+                                    <input type="text" id="dinterest1" required> 
+                                    <label>Interest 1</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" id="dinterest2" required> 
+                                    <label>Interest 2</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" id="dinterest3" required> 
+                                    <label>Interest 3</label>
+                                </div>
+                            </div>
+                            <div class="interests">
+                                <div class="form-group"> 
+                                    <input type="text" id="dinterest4" required> 
+                                    <label>Interest 4</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" id="dinterest5" required> 
+                                    <label>Interest 5</label>
+                                </div>
+                                <div class="form-group"> 
+                                    <input type="text" id="dinterest6" required> 
+                                    <label>Interest 6</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div style="display: flex; column-gap: 10px;"> 
+                        <button type="submit" id="btn" onclick="getValue()">Submit</button> 
+                        <button id="rDownload" onclick="printfun()"><i class="ri-download-2-fill"></i> Download </button> 
+                    </div>
+                </div> 
+                
+                <br>
+                <br>
+                <div class="restemp">
+                    <div class="name"></div>
+                    <div class="contents">
+                        <div class="additionalc">
+                            <div class="img">
+                                <img src="assets/img/defpp.png" id="rPhoto">
+                            </div>
+                            <div class="pdetails">
+                                <i class="ri-mail-line"></i> <span id="rEmail"></span><br class="brprofile">
+                                <i class="ri-phone-line"></i> <span id="rNumber"></span><br class="brprofile">
+                            </div>
+                            <div class="pskills">
+                                <p>SKILLS</p>
+                                <span id = "rskill1"></span>
+                                <span id = "rskill2"></span>
+                                <span id = "rskill3"></span>
+                                <span id = "rskill4"></span>
+                                <span id = "rskill5"></span>
+                                <span id = "rskill6"></span>
+                            </div>
+                            <div class="pinterests">
+                                <p>INTERESTS</p>
+                                <span id ="rinterest1"></span>
+                                <span id ="rinterest3"></span>
+                                <span id ="rinterest4"></span>
+                                <span id ="rinterest2"></span>
+                                <span id ="rinterest5"></span>
+                                <span id ="rinterest6"></span>
+                            </div>
+                        </div>
+                        <div class="infoc">
+                            <div class="profname">
+                            <span id="rName"></span>
+                            </div>
+                            <div class="profile">
+                                <p>PROFILE</p>
+                                <i class="ri-global-fill"></i> <span id="rWebsite"></span><br class="brprofile">
+                                <i class="ri-facebook-circle-fill"></i> <span id="rFacebook"></span><br class="brprofile">
+                                <i class="ri-instagram-fill"></i> <span id="rInstagram"></span><br class="brprofile">
+                                <i class="ri-twitter-x-fill"></i> <span id="rTwitter"></span><br class="brprofile">
+                                <i class="ri-github-fill"></i> <span id="rGithub"></span><br class="brprofile">
+                                <i class="ri-linkedin-box-fill"></i> <span id="rLinkedIn"></span><br class="brprofile">
+                            </div>
+                            <div class="education">
+                                <p>EDUCATION</p>
+                                <div class="clg-eduf">
+                                    <div class="eduname">
+                                        <span id="rclgname"></span>
+                                    </div>
+                                    <div class="edudate">
+                                        <label id="rclgdate"></label>
+                                    </div>
+                                    <div class="eduqua">
+                                        <span id="rclgqua"></span>
+                                    </div>
+                                    <div class="edudesc" style="margin-bottom: 20px;">
+                                        <span id="rclgdesc"></span>
+                                    </div>
+                                </div>
+                                <div class="scl-eduf">
+                                    <div class="eduname">
+                                        <span id="rsclname"></span>
+                                    </div>
+                                    <div class="edudate">
+                                        <label id="rscldate"></label>
+                                    </div>
+                                    <div class="eduqua">
+                                        <span id="rsclqua"></span>
+                                    </div>
+                                    <div class="edudesc">
+                                        <span id="rscldesc"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="workexp">
+                                <p>EXPERIENCE</p>
+                                <div class="dexp">
+                                    <div class="ogname">
+                                        <span id="rexpog1"></span>
+                                    </div>
+                                    <div class="exppd">
+                                        <span id="rexppost1"></span>
+                                        <span id="rexpdue1"></span>
+                                    </div>
+                                    <div class="descexp" style="margin-bottom: 10px;">
+                                        <span id="rexpdesc1"></span>
+                                    </div>
+                                </div>
+                                <div class="dexp">
+                                    <div class="ogname">
+                                        <span id="rexpog2"></span>
+                                    </div>
+                                    <div class="exppd">
+                                        <span id="rexppost2"></span>
+                                        <span id="rexpdue2"></span>
+                                    </div>
+                                    <div class="descexp">
+                                        <span id="rexpdesc2"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projectsd">
+                                <p>PROJECTS</p>
+                                <div class="projectd">
+                                    <div class="titlepro">
+                                        <span id="rptitle1"></span>
+                                    </div>
+                                    <div class="linkpro">
+                                        <i class="ri-link"></i> <span id="rplink1"></span>
+                                    </div>
+                                    <div class="descpro" style="margin-bottom: 10px;">
+                                        <span id="rpdesc1"></span>
+                                    </div>
+                                </div>
+                                <div class="projectd">
+                                    <div class="titlepro">
+                                        <span id="rptitle2"></span>
+                                    </div>
+                                    <div class="linkpro">
+                                        <i class="ri-link"></i><span id="rplink2"></span>
+                                    </div>
+                                    <div class="descpro">
+                                        <span id="rpdesc2"></span>
+                                    </div>
+                                </div>
+                                <!-- <div class="projectd">
+                                    <div class="titlepro">
+                                        <span id="rptitle3"></span>
+                                    </div>
+                                    <div class="linkpro">
+                                        <i class="ri-link"></i><span id="rplink3"></span>
+                                    </div>
+                                    <div class="descpro">
+                                        <span id="rpdesc3"></span>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <footer>
+                    <span class="footer__copy"> © sthaarekh </span>
+                </footer>
+                <script>
+                    $(document).ready(function(){9
+                        $(".brprofile").hide();
+                        $(".restemp i").hide();
+                        $(".pdetails i").hide();
+                        $(".restemp").hide();
+                        $("#rDownload").hide();
+                    });
+                    alert("USE LANDSCAPE MODE if you are surfing on Mobile")
+                    let defPhoto = document.getElementById('rPhoto')
+                    let jPhoto = document.getElementById('dPhoto')
+
+                    jPhoto.onchange = function(){
+                        defPhoto.src = URL.createObjectURL(jPhoto.files[0])
+                    }
+                    </script>
+            </body> 
+            </html>
+
+        
